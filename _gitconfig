@@ -1,0 +1,13 @@
+[user]
+	name = Jake Henningsgaard
+	email = jake.henningsgaard@gmail.com
+
+[http]
+	postBuffer = 524288000
+
+[pull]
+	rebase = preserve
+[core]
+	hooksPath = /Users/jake/hooks/
+	editor = vim -c'startinsert|norm! ggA'
+	excludesfile = /Users/jake/.gitignore_global
