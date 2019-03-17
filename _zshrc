@@ -18,8 +18,6 @@ export VIRTUALENVWRAPPER_PYTHON=$PYTHON_HOME
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export PATH=$PATH:$VIRTUALENVWRAPPER_VIRTUALENV
 
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jake/.oh-my-zsh
 
@@ -37,14 +35,18 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker asp agp aws)
+plugins=(git 
+	docker
+	asp
+	agp
+	aws
+	zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # Alias
 alias personal="cd ~/Development/Personal"
 alias work="cd ~/Development/Ippon"
-alias cat="ccat"
 alias big="printf '\e[8;54;238t' && printf '\e[3;0;0t'"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
