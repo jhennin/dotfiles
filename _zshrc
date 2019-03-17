@@ -42,7 +42,10 @@ plugins=(git docker asp agp)
 source $ZSH/oh-my-zsh.sh
 
 # Alias
-alias develop="cd ~/Development"
+alias personal="cd ~/Development/Personal"
+alias work="cd ~/Development/Ippon"
+alias cat="ccat"
+alias big="printf '\e[8;54;238t' && printf '\e[3;0;0t'"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
