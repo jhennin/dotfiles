@@ -30,6 +30,11 @@ export PATH=$PATH:$HOME/bin
 
 source "${HOME}/.zgenom/zgenom.zsh"
 
+****ALIAS****
+alias personal="cd ~/Development/Personal"
+alias work="cd ~/Development/Ippon"
+alias big="printf '\e[8;54;238t' && printf '\e[3;0;0t'"
+
 # if the init script doesn't exist
 if ! zgenom saved; then
     echo "Creating a zgenom save"
