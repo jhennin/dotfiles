@@ -1,3 +1,5 @@
-execute pathogen#infect()
+so ~/.vim/plugins.vim
+map <C-o> :NERDTreeToggle<CR>
+map ; :Files<CR>
 syntax on
-filetype plugin indent on
+set number
