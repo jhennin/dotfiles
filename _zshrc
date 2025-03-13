@@ -8,19 +8,8 @@ fi
 ## source environment variables specific to the machine before anything else
 test -e  "${HOME}/.pre-hook.zsh" && source "${HOME}/.pre-hook.zsh"
 
-#. $HOME/.asdf/asdf.sh
-
-# Hook direnv into your shell.
-eval "$(asdf exec direnv hook zsh)"
-
-# A shortcut for asdf managed direnv.
-direnv() { asdf exec direnv "$@"; }
-
 ## silent direnv
 export DIRENV_LOG_FORMAT=""
-
-# append completions to fpath
-#fpath=(${ASDF_DIR}/completions $fpath)
 
 # use another custom folder than $ZSH/custom
 ZSH_CUSTOM=$HOME/.zsh_custom
@@ -31,7 +20,7 @@ export PATH=$PATH:$HOME/bin
 source "${HOME}/.zgenom/zgenom.zsh"
 
 ## OH-MY-ZSH PLUGINS
-plugins=(asdf)
+plugins=()
 
 ####ALIAS####
 alias personal="cd ~/Development/Personal"
@@ -64,6 +53,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+source "${XDG_CONFIG_HOME:-$HOME/.config}/"
 
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
