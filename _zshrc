@@ -16,6 +16,7 @@ ZSH_CUSTOM=$HOME/.zsh_custom
 
 ## Custom binaries folders
 export PATH=$PATH:$HOME/bin
+export PATH="/Users/jakehenningsgaard/Library/Python/3.9/bin:$PATH"
 
 source "${HOME}/.zgenom/zgenom.zsh"
 
@@ -34,7 +35,6 @@ if ! zgenom saved; then
     zgenom ohmyzsh
 
     # plugins
-    zgenom ohmyzsh plugins/autojump
     zgenom ohmyzsh plugins/colored-man-pages
     zgenom ohmyzsh plugins/git
 
